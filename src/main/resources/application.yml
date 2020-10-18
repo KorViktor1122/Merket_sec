@@ -1,0 +1,24 @@
+server:
+  port: 8189
+  servlet:
+    context-path: /market
+spring:
+  flyway:
+    baselineOnMigrate: true
+    validateOnMigrate: false
+  jackson:
+    serialization:
+      indent_output: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/market_sec?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    thymeleaf: encoding=UTF-8
+    username: root
+    password: Ula88juli.
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
